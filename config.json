@@ -21,8 +21,13 @@
     },
     {
         "name": "Twilio API Key",
-        "regex": "account_sid|ACCOUNT_SID|twilio_sid|TWILIO_SID|sid=*AC[a-f0-9]{32}|sid:*AC[a-f0-9]{32}",
+        "regex": "account_sid|ACCOUNT_SID|twilio_sid|TWILIO_SID|sid=*AC[a-f0-9]{32}|sid:*AC[a-f0-9]{32}|*QU[A-Za-z0-9]{88}==|(QU[A-Za-z0-9]{88}==)",
         "outfile": "twilio-keys.txt"
+    },
+    { 
+        "name": "Twilio API encrypt",
+        "regex": "*QU[A-Za-z0-9]{88}==|(QU[A-Za-z0-9]{88}==)",
+        "outfile": "twilio-encrypt.txt"
     },
     {
         "name": "Plivo API Key",
