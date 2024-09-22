@@ -55,7 +55,8 @@ EXCLUDE_PATTERNS = [
     r"firebase\.js",
     r"pusher\.js",
     r"socket\.io\.js",
-    r"swfobject\.js"
+    r"swfobject\.js",
+    r"/static/js/main\.js"
 ]
 
 EXCLUDE_REGEX = re.compile('|'.join(EXCLUDE_PATTERNS), re.I)
