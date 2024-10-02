@@ -27,7 +27,7 @@ made by twelve1337
     print_green(banner)
 
 def search_leakix_api(query, scope):
-    api_key = "input ur apikey here"
+    api_key = "PUUpLOdBvhqLB6UFp86XShDY764_RpBIBaIvm4XTUDLynVqD"
     headers = {"accept": "application/json", "api-key": api_key}
     
     page = 0
