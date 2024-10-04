@@ -8,10 +8,10 @@ import base64
 requests.packages.urllib3.disable_warnings(
     requests.packages.urllib3.exceptions.InsecureRequestWarning
 )
-
+_TWILIO_ENCODE_PATTERN = re.compile(r'QU[MN][A-Za-z0-9]{87}==')
 TWILIO_SID_PATTERN = re.compile(r'AC[a-f0-9]{32}')
 TWILIO_AUTH_PATTERN = re.compile(r'(?i)[\'"]?([0-9a-f]{32})[\'"]?')
-TWILIO_ENCODE_PATTERN = re.compile(r'QU[A-Za-z0-9+/]{88}==')
+TWILIO_ENCODE_PATTERN = re.compile(r'( QU[MN][A-Za-z0-9]{87}==)')
 AWS_ACCESS_KEY_PATTERN = re.compile(r'AKIA[0-9A-Z]{16}')
 AWS_SECRET_KEY_PATTERN = re.compile(r'(?<=[\'\"])[0-9a-zA-Z\/+]{40}(?=[\'\"])')
 VALID_DECODED_PATTERN = re.compile(r'[A-Za-z0-9]{32}:[A-Za-z0-9]{32}')  # Valid decoded pattern
