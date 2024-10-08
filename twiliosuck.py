@@ -36,8 +36,8 @@ def display_ascii_art():
 
 proxy_list = [
     {
-        'http': 'http://sp4pep4itc:Eey9fKr2R0fu+Nv8uv@us.smartproxy.com:10000',
-        'https': 'http://sp4pep4itc:Eey9fKr2R0fu+Nv8uv@us.smartproxy.com:10000'
+        'http': 'http://sp4pep4itc:o3ca2zSoMgav5G3+Nr@us.smartproxy.com:10000',
+        'https': 'http://sp4pep4itc:o3ca2zSoMgav5G3+Nr@us.smartproxy.com:10000'
     }
 ]
 
